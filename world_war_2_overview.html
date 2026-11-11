@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD WAR 2</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 50px 20px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 { color: #ff4d4d; }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888888;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            border-bottom: 2px solid #ff4d4d;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        p { line-height: 1.6; color: #cccccc; }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            transition: color 0.2s ease;
+        }
+        li:hover { color: #ff4d4d; }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333333;
+            margin: 30px 0;
+            width: 100%;
+        }
+        h3 { margin-top: 0; margin-bottom: 10px; }
+        strong { color: #ffffff; font-weight: bold; }
+        .highlight-box {
+            background-color: #111111;
+            border-left: 4px solid #ff4d4d;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #dddddd;
+        }
+        nav { margin: 15px 0 25px; font-size: 0.95rem; }
+        nav a, a {
+            color: #ff4d4d;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        nav a:hover, a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        nav a, footer a { margin-right: 15px; }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 20px;
+        }
+        .faction-box {
+            background-color: #111111;
+            padding: 1rem 1.2rem;
+            border-radius: 4px;
+            border-left: 4px solid #ff4d4d;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            nav a { display: inline-block; margin: 5px 6px 5px 0; }
+            footer { gap: 12px; flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <h1>World War 2 Overview</h1>
+        <p>This page is about the global conflict that took place from 1939 to 1945.</p>
+        <nav>
+            <a href="#sides">The Sides</a> |
+            <a href="#dates">Key Dates</a> |
+            <a href="#aftermath">Aftermath</a> |
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+    <section id="sides">
+        <h2>The two sides</h2>
+        <p>The war was fought between two major groups: the Allies and the Axis powers.</p>
+        <div class="grid">
+            <div class="faction-box">
+                <h3>1. The Allies</h3>
+                <ul style="margin: 0;">
+                    <li>United States</li><li>United Kingdom</li><li>France</li><li>Soviet Union</li><li>China</li>
+                </ul>
+            </div>
+            <div class="faction-box">
+                <h3>2. The Axis</h3>
+                <ul style="margin: 0;">
+                    <li>Germany</li><li>Italy</li><li>Japan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="dates">
+        <h2>Key dates</h2>
+        <ul>
+            <li><strong>1939:</strong> Germany invades Poland, starting the war</li>
+            <li><strong>1941:</strong> Japan attacks Pearl Harbor, bringing the US into the war</li>
+            <li><strong>1944:</strong> D-Day, the Allied invasion of Normandy</li>
+            <li><strong>1945:</strong> Germany surrenders in May; Japan surrenders in September, ending the war</li>
+        </ul>
+    </section>
+    <aside class="highlight-box">
+        <p>"History is written by the victors, but the cost of global conflict is paid by everyone."</p>
+    </aside>
+    <hr>
+    <section id="aftermath">
+        <h2>Aftermath and Legacy</h2>
+        <p>Following the conclusion of World War 2 in 1945, the global landscape changed dramatically. The United Nations was established to promote international cooperation and prevent future conflicts. The war also led to the decolonization of many regions and the emergence of the United States and the Soviet Union as superpowers.</p>
+    </section>
+    <hr>
+    <section id="resources">
+        <h2>Further Reading</h2>
+        <p>Learn more about World War 2 through these historical resources:</p>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/World_War_II" target="_blank" rel="noopener noreferrer">World War 2 on Wikipedia</a></li>
+            <li><a href="https://www.nationalww2museum.org/" target="_blank" rel="noopener noreferrer">The National WWII Museum</a></li>
+        </ul>
+    </section>
+    <hr>
+    <footer>
+        <p>created for COSC103 project</p>
+        <a href="#top">Back to top ↑</a>
+    </footer>
+</body>
+</html>
